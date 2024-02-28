@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayatnik</title>
+    <link rel="stylesheet" href="./sytle.css">
+</head>
+
+<body>
+    <section id="jadval" class="display_flex">
+        <table class="table">
+            <tr>
+                <th>№</th>
+                <th>l<sub>1</sub></th>
+                <th colspan="2" style="padding: 10px 0 0 0;">
+                    <p>30 marta tebranish uchun ketgan vaqt</p>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; text-align: center; border: 0.5px solid #000; margin: 0 -1px -1px -1px;">
+                        <p style="width: 50%; border-right: 0.5px solid #000;">t<sub>1</sub></p>
+                        <p style="width: 50%;">t<sub>2</sub></p>
+                    </div>
+                </th>
+                <th>
+                    <p>t<sub>o'rt</sub> = <br> (<span class="t1_t2">t<sub>1</sub> + t<sub>2</sub></span> <span
+                            class="bolish"></span> <span class="taqsim_2">)/2</span></p>
+                </th>
+                <th style="font-family: roboto; font-size: 25px;">T<sup>2</sup></th>
+                <th>g<sub>i</sub></th>
+                <th>g<sub>o'rt</sub></th>
+                <th>
+                    <p>&Delta; g<sub>i</sub></p>
+                </th>
+                <th>
+                    <p>&Delta; g<sub>o'r</sub></p>
+                </th>
+                <th>ε</th>
+                <th>g</th>
+            </tr>
+            <tr>
+                <td class="numbering">1</td>
+                <td><input type="number" placeholder="0" class="data__l"></td>
+                <td><input type="number" placeholder="0" class="data__t1"></td>
+                <td><input type="number" placeholder="0" class="data__t2"></td>
+                <td class="ortacha_qiymat"></td>
+                <td class="davr_kvadrati"></td>
+                <td class="gravitation_gi" rowspan="2"></td>
+                <td class="gravitation_gort" rowspan="6"></td>
+                <td class="gravitation_delta_g_i" rowspan="2"></td>
+                <td class="gravitation_delta_g_ort" rowspan="6"></td>
+                <td class="efsilon" rowspan="6"></td>
+                <td class="gravitation_last_g"></td>
+            </tr>
+            <tr>
+                <td class="numbering">2</td>
+                <td><input type="number" placeholder="0" class="data__l"></td>
+                <td><input type="number" placeholder="0" class="data__t1"></td>
+                <td><input type="number" placeholder="0" class="data__t2"></td>
+                <td class="ortacha_qiymat"></td>
+                <td class="davr_kvadrati"></td>
+                <td class="gravitation_last_g"></td>
+            </tr>
+        </table>
+        <div class="buttons display_flex">
+            <button class="glow-on-hover qoshish" id="fillButton">Element qo'shish</button>
+            <button class="glow-on-hover toldirilganmi qoshish">Katakchalarni to'liq to'ldiring</button>
+            <button class="glow-on-hover info qoshish tugma-id">*6 tadan ko'p element qo'llab quvvatlanmaydi</button>
+            <button class="glow-on-hover qoshish" onclick="solved()">Hisoblash</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
