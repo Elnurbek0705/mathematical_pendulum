@@ -1,5 +1,15 @@
 "use strict"
 
+
+/*
+   ++-----------------------------------------------++
+   ++-----------------------------------------------++
+   ||     TATU UF 941-23 GURUH TALABASI             ||
+   ||        Azimboyev Elnurbek                     ||
+   ++-----------------------------------------------++
+   ++-----------------------------------------------++
+
+*/
 const qoshish_btn = document.querySelector('.qoshish_btn'),
    numbering = +document.querySelectorAll('.numbering')[1].innerHTML,
    table = document.querySelector('.table tbody'),
